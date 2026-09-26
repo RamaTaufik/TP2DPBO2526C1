@@ -3,7 +3,7 @@
 
 class Food {
   private:
-    std::string name, flavor; // Judul, Rasa
+    std::string name, flavor; // Nama produk, Rasa
     int price; // Harga
 
   public:
