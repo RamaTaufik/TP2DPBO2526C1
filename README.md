@@ -42,6 +42,7 @@ Saat pertama kali membuka aplikasi, pengguna akan disambut menu (CLI)/*homepage*
 | CLI | WEB |
 | --- | --- |
 | ![Menu](documentations/home-CLI.png) | ![Homepage](documentations/home-Web.png) |
+
 Secara *default*, tiap implementasi memiliki 5 data *dummy* (*cek CATATAN dibawah*). Pada implementasi CLI, opsi pada tiap menu dapat dipilih dengan memasukkan angka opsi yang sesuai, dan aplikasi akan memberi tahu instruksi selanjutnya. Pada implementasi *Web*, fungsi pencarian dan tombol menuju laman penambahan data terletak di *homepage*. Fungsi ubah, hapus (baik gambar saja maupun data produk) ditempatkan pada kolom aksi di tiap baris data.
 
 # ERROR HANDLING
