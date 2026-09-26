@@ -1,0 +1,230 @@
+body {
+  margin: 0;
+  padding: 0;
+  /* background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.9)), 
+    url("images/background.jpg");
+  background-attachment: fixed, scroll;
+  background-repeat: no-repeat, repeat;
+  background-size: cover; */
+  background-color: #000;
+  color: #ddd;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.logo {
+  display: block;
+  width: 500px;
+  margin: 0 auto 20px;
+}
+
+.title {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
+}
+.text-danger {
+  color: #ffaec9;
+}
+.text-end {
+  text-align: end;
+}
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  height: 40px;
+  margin: 10px 0;
+  padding: 0 15px;
+  background-color: rgba(0,0,0,0);
+  text-decoration: none;
+  color: #555;
+  font-weight: 800;
+  font-size: 15px;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+.button-submit {
+  color: #75fbed;
+  border: 2px solid #75fbed;
+}
+.button-submit:hover {
+  background-color: #75fbed;
+  color: #555;
+  border: 2px solid rgba(0,0,0,0);
+}
+.button-warning {
+  color: #fff200;
+  border: 2px solid #fff200;
+}
+.button-warning:hover {
+  background-color: #fff200;
+  color: #555;
+  border: 2px solid rgba(0,0,0,0);
+}
+.button-danger {
+  color: #ffaec9;
+  border: 2px solid #ffaec9;
+}
+.button-danger:hover {
+  background-color: #ffaec9;
+  color: #555;
+  border: 2px solid rgba(0,0,0,0);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+input {
+  font-family: monospace;
+}
+
+.form-container {
+  width: 50%;
+  padding: 15px;
+}
+.form-container form {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 15px;
+  background-color: #555;
+  color: #ddd;
+  border-radius: 0;
+}
+.form-container .input-group {
+  display: inline-block;
+  width: 45%;
+  margin-right: 4%;
+}
+.form-container .input-group label {
+  display: block;
+  font-weight: 500;
+}
+.form-container .input-group .checkbox-label {
+  display: inline-block !important;
+}
+.form-container .input-group input:not([type="file"],[type="checkbox"]) {
+  box-sizing: border-box;
+  width: 100%;
+  height: 30px;
+  margin-bottom: 15px;
+  padding: 0 15px;
+  background-color: #ddd;
+  color: #444;
+  border: 2px solid #888;
+  border-radius: 0;
+}
+.form-container .checkbox-group {
+  width: 100%;
+  margin-bottom: 15px;
+}
+.form-container .checkbox-group .input-group {
+  display: inline-block;
+  width: 32% !important;
+  margin: 0 !important;
+}
+.form-container .button {
+  width: 100% !important;
+}
+.form-container .button-back {
+  display: block;
+  width: fit-content;
+  margin-bottom: 15px;
+  color: #75fbed;
+  text-decoration: none;
+  font-weight: 500;
+}
+.form-container .button-back:hover {
+  color: #999;
+}
+.form-container .error {
+  border: 1px solid #ffaec9 !important;
+}
+
+.table-container {
+  box-sizing: border-box;
+  width: 95%;
+  padding: 30px;
+}
+.table-container table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 10px 5px rgba(0, 0, 0, 0.3);
+}
+.table-container table tbody tr {
+  border-top: 1px solid #888;
+}
+.table-container th, .table-container td {
+  padding: 5px 10px;
+  color: #ddd;
+}
+.table-container th:nth-child(odd), .table-container td:nth-child(odd) {
+  background-color: #555;
+}
+.table-container th:nth-child(even), .table-container td:nth-child(even) {
+  background-color: #666;
+}
+.table-container .table-no-data {
+  text-align: center;
+  font-weight: 400;
+  color: #ddd;
+}
+.table-container img {
+  width: 150px;
+  object-fit: contain;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 15px;
+}
+.input-container form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+.input-container input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 40px;
+  margin: 0;
+  padding: 0 15px;
+  background-color: #ddd;
+  color: #444;
+  border: 2px solid #888;
+  border-radius: 0;
+}
+.input-container button {
+  width: 50px;
+  height: 40px;
+  margin: 0;
+  background-color: #888;
+  color: #ddd;
+  font-size: 1.5em;
+  border: none;
+  border-radius: 0;
+}
+.input-container a {
+  box-sizing: border-box;
+  height: 40px;
+  padding: 4px 15px;
+  background-color: rgba(0,0,0,0);
+  color: #75fbed;
+  font-size: 19px;
+  text-decoration: none;
+  border: 2px solid #75fbed;
+  border-radius: 0;
+}
+.input-container a:hover {
+  background-color: #75fbed;
+  color: #000;
+  border: 2px solid rgba(0,0,0,0);
+}
