@@ -133,7 +133,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
         <div class="input-group">
           <label for="weight">Berat (gram)</label>
-          <input type="number" name="weight" id="weight" class="<?= $e_idx == 5? "error": "" ?>" value="<?= isset($weight)? $weight :"" ?>">
+          <input type="number" name="weight" id="weight" class="<?= $e_idx == 5? "error": "" ?>" min="0" value="<?= isset($weight)? $weight :"" ?>">
         </div>
         <div class="checkbox-group">
           <div class="input-group">
