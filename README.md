@@ -26,6 +26,8 @@ Dalam program ini, terdapat 3 kelas:
   2. `PetFood`, spesifikasi dari kelas `Food` yang mencakup semua makanan hewan peliharaan, termasuk kucing, anjing, ikan, unggas, dll. Atribut tambahan di kelas ini (tanggal kadaluarsa, SKU, berat) adalah karena makanan hewan pada umumnya diproduksi agar tahan lama, dan karena bermacam-macam merk-nya, diberikan SKU. Makanan hewan juga umumnya dijual berdasarkan berat;
   3. `CatFood`, spesifikasi lebih lanjut dari kelas `PetFood` yang hanya mencakup makanan untuk kucing. Atribut yang ada disini terlihat seperti bisa diletakkan di `PetFood`, namun pada nyatanya tidak. Makanan untuk ikan tidak dapat basah/terlalu lunak karena akan mengotori air. Lalu, tidak semua obat hewan dijual dalam bentuk makanan layaknya kucing. Terakhir, kucing merupakan salah satu hewan peliharaan yang makanannya memang ada yang diproduksi khusus untuk anak kucing.
 
+Tiap kelas tidak memiliki metode tambahan selain `Setter()` dan `Getter()`
+
 # FITUR
 1. Tambah data baru;
 2. Lihat data;
@@ -33,6 +35,14 @@ Dalam program ini, terdapat 3 kelas:
 4. Hapus data berdasarkan SKU;
 5. Penyimpanan data berbasis `session` di implementasi *web*;
 6. Pencarian data berdasarkan 'SKU' dan 'Nama' produk.
+
+# ALUR
+Saat pertama kali membuka aplikasi, pengguna akan disambut menu (CLI)/*homepage* (*Web*), seperti berikut:
+
+| CLI | WEB |
+| --- | --- |
+| ![Menu](documentations/home-CLI.png) | ![Homepage](documentations/home-Web.png) |
+Secara *default*, tiap implementasi memiliki 5 data *dummy* (*cek CATATAN dibawah*). Pada implementasi CLI, opsi pada tiap menu dapat dipilih dengan memasukkan angka opsi yang sesuai, dan aplikasi akan memberi tahu instruksi selanjutnya. Pada implementasi *Web*, fungsi pencarian dan tombol menuju laman penambahan data terletak di *homepage*. Fungsi ubah, hapus (baik gambar saja maupun data produk) ditempatkan pada kolom aksi di tiap baris data.
 
 # ERROR HANDLING
 *Error handling* dibawah berlaku untuk semua implementasi. Untuk implementasi Web, validasi diterapkan dua kali, yaitu pada masing-masing input dan ketika form di-*submit*. Saat terjadi *error*, program akan mengembalikan pesan dan meminta ulang *input* yang sesuai.
