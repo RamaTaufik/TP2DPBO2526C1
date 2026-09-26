@@ -142,22 +142,17 @@ int main() {
   std::string choice = "0"; // Variabel untuk input opsi
 
   // Data dummy
-  // cat_foods.push_back(CatFood("Interstellar", "Christopher Nolan", "Inggris", 169, 2014, 30000));
-  // cat_foods.push_back(CatFood("Inception", "Christopher Nolan", "Inggris", 148, 2010, 35000));
-  // cat_foods.push_back(CatFood("Parasite", "Bong Joon-ho", "Korea", 132, 2019, 40000));
-  // cat_foods.push_back(CatFood("Laskar Pelangi", "Riri Riza", "Indonesia", 125, 2008, 25000));
-  // cat_foods.push_back(CatFood("Spirited Away", "Hayao Miyazaki", "Jepang", 125, 2001, 30000));
-  // cat_foods.push_back(CatFood("The Dark Knight", "Christopher Nolan", "Inggris", 152, 2008, 35000));
-  // cat_foods.push_back(CatFood("Pengabdi Setan", "Joko Anwar", "Indonesia", 107, 2017, 30000));
-  // cat_foods.push_back(CatFood("Godzilla Minus One", "Takashi Yamazaki", "Jepang", 125, 2023, 40000));
+  cat_foods.push_back(CatFood("SKU001", "Whiskas Ocean Fish", "Tuna & Salmon", 45000, 2026, 12, 31, 400, "y", "n", "n"));
+  cat_foods.push_back(CatFood("SKU002", "Royal Canin Mother & Babycat", "Chicken", 120000, 2027, 5, 15, 1000, "n", "n", "y"));
+  cat_foods.push_back(CatFood("SKU003", "Hill's Prescription Diet i/d", "Turkey", 250000, 2026, 9, 20, 1500, "n", "y", "n"));
+  cat_foods.push_back(CatFood("SKU004", "Me-O Creamy Treat", "Salmon", 28000, 2025, 11, 10, 60, "y", "n", "n"));
+  cat_foods.push_back(CatFood("SKU005", "Pro Plan Adult Optirenal", "Salmon & Rice", 185000, 2027, 2, 28, 2500, "n", "n", "n"));
 
   // Perubahan panjang maksimum setiap atribut setelah penambahan data dummy
-  // max_lens[1] = 18;
-  // max_lens[2] = 17;
-  // max_lens[3] = 9;
-  // max_lens[4] = 6;
-  // max_lens[5] = 5;
-  // max_lens[6] = 7;
+  max_lens[0] = 6;
+  max_lens[1] = 28;
+  max_lens[2] = 13;
+  max_lens[3] = 8;
 
   std::cout << "   ____  __ __  _____  _____  _  __    ____  _____  __  ____  __   __  ____    _____\n";
   std::cout << "  / __/ / // / / // / / // / | |/ /   / __/ / // / / / / __/ /  | / / / /| |  /  __/\n";
