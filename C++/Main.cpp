@@ -195,6 +195,7 @@ int main() {
         // Pastikan SKU unik dan tidak duplikat
         if(findBySKU(cat_foods, temp_str) >= 0) {
           std::cout << "SKU sudah ada!\n";
+          res = -1;
         } else {
           res = temp_c_food.setSKU(temp_str);
           // Cek panjang maksimum atribut 'SKU'
