@@ -20,6 +20,7 @@ FURRY FRIENDS merupakan aplikasi yang mengelola data produk makanan kucing. Ters
 
 # DIAGRAM UML
 ![Diagram gambaran relasi kelas](diagram.png)
+
 Dalam program ini, terdapat 3 kelas: 
   1. `Food`, kelas umum yang menyangkut semua macam makanan, baik untuk manusia maupun hewan. Maka dari itu, semua atribut disini juga dapat berlaku untuk segalan jenis makanan;
   2. `PetFood`, spesifikasi dari kelas `Food` yang mencakup semua makanan hewan peliharaan, termasuk kucing, anjing, ikan, unggas, dll. Atribut tambahan di kelas ini (tanggal kadaluarsa, SKU, berat) adalah karena makanan hewan pada umumnya diproduksi agar tahan lama, dan karena bermacam-macam merk-nya, diberikan SKU. Makanan hewan juga umumnya dijual berdasarkan berat;
@@ -102,4 +103,4 @@ Untuk Implementasi Web, pastikan membuka laman Main.php terlebih dahulu, karena 
 
 Jika sudah terlanjur membuka laman Create.php atau Update.php, maka hapus session dengan melakukan klik kanan, lalu Inspect -> Application -> Cookies, dan hapus session-nya.
 
-<img src="documentations/_watermark.png" width="250px" align="right">
+<img src="documentations/_watermark.gif" width="250px" align="right">
